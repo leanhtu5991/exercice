@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="titre col-md-12">
+      <div class="row">
+        <div class="col-md-2 div-icon">
+          <div class="icon"><fa name="facebook-square"></fa></div>
+        </div>
+        <div class="col-md-10">
+          <h4>Navigation</h4>
+          <h5>Pont MORANT Verinage et entretien</h5>
+        </div>
+      </div>
+    </div>
+    <div class="main col-md-12">
+        <button class='button-mobile' (click)='openFunction()'>function</button>
+        <div [ngClass]="listFunction" *ngFor="let item of list">
+          <div class="col-md-2 div-icon">
+            <div class="icon"><fa name="facebook-square"></fa></div>
+          </div>
+          <div class="col-md-10" (click)="oneSelected(item)">
+            <h4>{{item.name}}</h4>
+            <h5 class='detail'>{{item.detail}}</h5>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

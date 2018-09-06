@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  public valueUpdate(a){
+    //this._functionSelected = a;
+    console.log(a);
+  }
 }

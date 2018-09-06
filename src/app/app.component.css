@@ -1,0 +1,36 @@
+body{
+    background-color: #F8F8FF;
+}
+.main{
+    background-color: #F8F8FF;
+    height: auto;
+    display: flex;
+}
+
+.main_left{
+    width: 20%;
+    margin-right: 2%;
+    background-color:#F8F8FF;
+    height: auto;
+    margin-left: 5%;
+}
+.main_right{
+    width:70%;
+    background-color: #F8F8FF;
+}
+@media screen and (max-width: 768px) {
+    .main{
+        display: inline;
+    }
+    .main_left{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main_right{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+  
